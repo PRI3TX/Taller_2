@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz sobre Millonarios F.C.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>💙 Quiz de Conocimientos: Millonarios F.C. 💙</h1>
+
+  <form id="quizForm">
+    <div class="pregunta">
+      <p>1. ¿En qué año fue fundado Millonarios?</p>
+      <select name="p1" required>
+        <option value="">Selecciona una opción</option>
+        <option value="1937">1937</option>
+        <option value="1946">1946</option>
+        <option value="1949">1949</option>
+      </select>
+    </div>
+
+    <div class="pregunta">
+      <p>2. ¿Cómo se llama el estadio donde juega de local?</p>
+      <input type="radio" name="p2" value="Campín" required> El Campín<br/>
+      <input type="radio" name="p2" value="Atanasio"> Atanasio Girardot<br/>
+      <input type="radio" name="p2" value="Pascual"> Pascual Guerrero
+    </div>
+
+    <div class="pregunta">
+      <p>3. ¿Cuál de estos jugadores hizo parte del famoso “Ballet Azul”?</p>
+      <select name="p3" required>
+        <option value="">Selecciona una opción</option>
+        <option value="Di Stefano">Alfredo Di Stéfano</option>
+        <option value="Willington">Willington Ortiz</option>
+        <option value="Falcao">Radamel Falcao</option>
+      </select>
+    </div>
+
+    <div class="pregunta">
+      <p>4. ¿Cuántas estrellas tiene Millonarios (hasta 2023)?</p>
+      <input type="radio" name="p4" value="15" required> 15<br/>
+      <input type="radio" name="p4" value="16"> 16<br/>
+      <input type="radio" name="p4" value="17"> 17
+    </div>
+
+    <button type="submit">Enviar respuestas</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
