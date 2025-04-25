@@ -39,17 +39,47 @@
     </div>
 
     <div class="pregunta">
-      <p>4. ¿Cuántas estrellas tiene Millonarios (hasta 2023)?</p>
+      <p>4. ¿Cuántas estrellas tiene Millonarios (hasta 2025)?</p>
       <input type="radio" name="p4" value="15" required> 15<br/>
       <input type="radio" name="p4" value="16"> 16<br/>
       <input type="radio" name="p4" value="17"> 17
     </div>
 
+    <div class="pregunta">
+      <p>5. ¿En qué año consiguió Millonarios su última estrella?</p>
+      <input type="text" name="p5" placeholder="Ej: 2004" required />
+    </div>
+    <div class="pregunta">
+      <p>6. complete la cancion </p>
+      <p>Millonaros no tiene marido,Millonarios no tiene mujer pero tiene....</p>
+      <input type="text" name="p6"  required />
+    </div>
+    <div class="pregunta">
+      <p>7. los hinchas de millos pasan la materia </p>
+      <input type="text" name="p7" placeholder="Ej:Si" required />
+    </div>
+
     <button type="submit">Enviar respuestas</button>
   </form>
-
+  <form>
   <div id="resultado"></div>
 
+  <!-- Botón centrado -->
+  <div class="centrar">
+    <button id="abrirModal">🎥 Si quieres llorar da cklic aqui</button>
+  </div>
+
+  <!-- Modal de video -->
+  <div id="videoModal" class="modal">
+    <div class="modal-contenido">
+      <span id="cerrarModal">&times;</span>
+      <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/OlfKT01rOeU" 
+      frameborder="0" allowfullscreen>
+    </iframe>    
+    </div>
+  </div>
+</form>
   <script src="script.js"></script>
 </body>
 </html>
